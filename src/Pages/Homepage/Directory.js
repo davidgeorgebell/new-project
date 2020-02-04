@@ -1,24 +1,14 @@
 import React, { useEffect, useState } from 'react';
 
 import './Directory.css';
-import { fetchAllForcesData } from '../../api';
+import { fetchAllForcesData } from '../../utils/api';
 import AllForcesList from '../../Components/AllForcesList/AllForcesList';
 
 const Directory = () => {
   const [allForces, setAllForces] = useState([]);
 
   useEffect(() => {
-    const fetchAllForcesData = async () => {
-      try {
-        const dataResponse = await fetch(`https://data.police.uk/api/forces`);
-        const data = await dataResponse.json();
-        console.log(data);
-        setAllForces(data);
-      } catch (err) {
-        console.log('ERROR fetching data');
-      }
-    };
-    fetchAllForcesData();
+    fetchAllForcesData().then((data) => setAllForces(data));
   }, []);
   return (
     <div className='directory'>
