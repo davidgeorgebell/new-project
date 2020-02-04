@@ -1,11 +1,13 @@
-import React, { useEffect } from 'react';
-import { fetchData } from './api';
+import React from 'react';
+
+import Directory from './Pages/Homepage/Directory';
 
 function App() {
-  useEffect(() => {
-    fetchData();
-  }, []);
-  return <div className='App'>hello world</div>;
+  return (
+    <div className='App'>
+      <Directory />
+    </div>
+  );
 }
 
 export default App;

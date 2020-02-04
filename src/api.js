@@ -1,10 +1,7 @@
-export const API_KEY = process.env.REACT_APP_NASA_API_KEY;
-
-export const fetchData = async () => {
+export const fetchAllForcesData = async () => {
   try {
-    const dataResponse = await fetch(``);
+    const dataResponse = await fetch(`https://data.police.uk/api/forces`);
     const data = await dataResponse.json();
-
     console.log(data);
   } catch (err) {
     console.log('ERROR fetching data');
