@@ -6,9 +6,11 @@ import ForceItem from '../ForceItem/ForceItem';
 const AllForcesList = ({ allForces }) => {
   return (
     <div>
-      {allForces.map((force) => (
-        <ForceItem key={force.id} id={force.id} force={force} />
-      ))}
+      <ul>
+        {allForces.map((force) => (
+          <ForceItem key={force.id} id={force.id} force={force} />
+        ))}
+      </ul>
     </div>
   );
 };

@@ -12,10 +12,7 @@ const Directory = () => {
   }, []);
   return (
     <div className='directory'>
-      <ul>
-        {allForces &&
-          allForces.map((force) => <li key={force.id}>{force.name}</li>)}
-      </ul>
+      <AllForcesList allForces={allForces} />
     </div>
   );
 };
