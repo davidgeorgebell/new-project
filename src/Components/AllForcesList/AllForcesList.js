@@ -3,14 +3,14 @@ import React from 'react';
 import './AllForcesList.css';
 import ForceItem from '../ForceItem/ForceItem';
 
-const AllForcesList = ({ allForces, isLoading }) => {
+const AllForcesList = ({ filteredForce, isLoading }) => {
   return (
     <div className='all-forces-list'>
       {isLoading ? (
         <h1>Loading!</h1>
       ) : (
         <ul>
-          {allForces.map((force) => (
+          {filteredForce.map((force) => (
             <ForceItem key={force.id} id={force.id} force={force} />
           ))}
         </ul>

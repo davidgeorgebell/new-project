@@ -7,7 +7,7 @@ import {
   Redirect
 } from 'react-router-dom';
 
-import Directory from './Pages/Homepage/Directory';
+import Directory from './Pages/Directory/Directory';
 import ForceInfopage from './Pages/ForceInfopage/ForceInfopage';
 import LoadingContextProvider from './contexts/LoadingContext';
 
