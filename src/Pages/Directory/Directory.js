@@ -27,7 +27,11 @@ const Directory = () => {
 
   return (
     <div className='directory'>
-      <Filter handleFilter={handleFilter} filter={filter} />
+      <Filter
+        handleFilter={handleFilter}
+        filter={filter}
+        allForces={allForces}
+      />
       <AllForcesList filteredForce={filteredForce} isLoading={isLoading} />
     </div>
   );
