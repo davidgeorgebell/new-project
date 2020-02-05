@@ -9,24 +9,27 @@ import {
 
 import Directory from './Pages/Homepage/Directory';
 import ForceInfopage from './Pages/ForceInfopage/ForceInfopage';
+import LoadingContextProvider from './contexts/LoadingContext';
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        <main>
-          <Switch>
-            <Route path='/' exact>
-              <Directory />
-            </Route>
-            <Route path='/info/name' exact>
-              <ForceInfopage />
-            </Route>
-            <Redirect to='/' />
-          </Switch>
-        </main>
-      </div>
-    </Router>
+    <LoadingContextProvider>
+      <Router>
+        <div className='App'>
+          <main>
+            <Switch>
+              <Route path='/' exact>
+                <Directory />
+              </Route>
+              <Route path='/info/name' exact>
+                <ForceInfopage />
+              </Route>
+              <Redirect to='/' />
+            </Switch>
+          </main>
+        </div>
+      </Router>
+    </LoadingContextProvider>
   );
 }
 
