@@ -21,7 +21,7 @@ function App() {
               <Route path='/' exact>
                 <Directory />
               </Route>
-              <Route path='/info/name' exact>
+              <Route path='/info/:id' exact>
                 <ForceInfopage />
               </Route>
               <Redirect to='/' />

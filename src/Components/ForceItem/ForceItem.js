@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './ForceItem.css';
 
 const ForceItem = ({ force }) => {
   return (
-    <div>
-      <li>{force.name}</li>
+    <div className='force-item-wrapper'>
+      <Link to={`/info/${force.id}`}>
+        <li>{force.name}</li>
+      </Link>
     </div>
   );
 };
