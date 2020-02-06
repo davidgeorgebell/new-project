@@ -10,12 +10,14 @@ import {
 import Directory from './Pages/Directory/Directory';
 import ForceInfopage from './Pages/ForceInfopage/ForceInfopage';
 import LoadingContextProvider from './contexts/LoadingContext';
+import Header from './Components/Header/Header';
 
 function App() {
   return (
     <LoadingContextProvider>
       <Router>
         <div className='App'>
+          <Header />
           <main>
             <Switch>
               <Route path='/' exact>
