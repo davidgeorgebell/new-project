@@ -1,8 +1,12 @@
 .header-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  background: red;
   width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 ul {
   list-style: none;
@@ -10,7 +14,4 @@ ul {
 li {
   margin: 0;
   padding: 0;
-}
-.list-item-1 {
-  grid-column: 1 / span 2;
 }
