@@ -11,6 +11,7 @@ import Directory from './Pages/Directory/Directory';
 import ForceInfopage from './Pages/ForceInfopage/ForceInfopage';
 import LoadingContextProvider from './contexts/LoadingContext';
 import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <div className='App'>
           <Header />
           <main>
+            <h1>British Police Directory</h1>
             <Switch>
               <Route path='/' exact>
                 <Directory />
@@ -29,6 +31,7 @@ function App() {
               <Redirect to='/' />
             </Switch>
           </main>
+          <Footer />
         </div>
       </Router>
     </LoadingContextProvider>
