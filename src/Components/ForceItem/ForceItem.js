@@ -7,7 +7,7 @@ const ForceItem = ({ force }) => {
   return (
     <div className='force-item-wrapper'>
       <Link to={`/info/${force.id}`}>
-        <li>{force.name}</li>
+        <li className='directory-link'>{force.name}</li>
       </Link>
     </div>
   );

@@ -1,0 +1,7 @@
+.directory-link {
+  padding: 0.5em;
+  width: 30vw;
+}
+.directory-link:hover {
+  background: var(--tertiary);
+}
