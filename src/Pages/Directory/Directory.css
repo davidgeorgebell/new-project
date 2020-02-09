@@ -1,0 +1,7 @@
+.directory {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 20px;
+  min-height: 100vh;
+  overflow: hidden;
+}

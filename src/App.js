@@ -19,18 +19,15 @@ function App() {
       <Router>
         <div className='App'>
           <Header />
-          <main>
-            <h1>British Police Directory</h1>
-            <Switch>
-              <Route path='/' exact>
-                <Directory />
-              </Route>
-              <Route path='/info/:id' exact>
-                <ForceInfopage />
-              </Route>
-              <Redirect to='/' />
-            </Switch>
-          </main>
+          <Switch>
+            <Route path='/' exact>
+              <Directory />
+            </Route>
+            <Route path='/info/:id' exact>
+              <ForceInfopage />
+            </Route>
+            <Redirect to='/' />
+          </Switch>
           <Footer />
         </div>
       </Router>
