@@ -6,9 +6,9 @@ import './ForceItem.css';
 const ForceItem = ({ force }) => {
   return (
     <div className='force-item-wrapper'>
-      <Link to={`/info/${force.id}`}>
-        <li className='directory-link'>{force.name}</li>
-      </Link>
+      <li className='directory-link'>
+        <Link to={`/info/${force.id}`}>{force.name}</Link>
+      </li>
     </div>
   );
 };

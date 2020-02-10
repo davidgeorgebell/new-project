@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import ForceInfoItem from '../../Components/ForceInfoItem/ForceInfoItem';
 import { fetchSpecificForceData } from '../../utils/api';
 import { LoadingContext } from '../../contexts/LoadingContext';
+import './ForceInfopage.css';
 
 const ForceInfopage = () => {
   const { setLoading } = useContext(LoadingContext);

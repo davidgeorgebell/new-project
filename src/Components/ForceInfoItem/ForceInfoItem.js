@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ForceInfoItem.css';
+
 const ForceInfoItem = ({ forceInformation, engagement_methods }) => {
   return (
     <div className='force-info-item-wrapper'>

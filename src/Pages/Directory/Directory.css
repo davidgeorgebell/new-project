@@ -1,7 +1,9 @@
 .directory {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0 2em;
   min-height: 100vh;
   overflow: hidden;
 }
