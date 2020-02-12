@@ -1,10 +1,11 @@
 .force-info-item-wrapper {
-  display: inline-block;
+  grid-area: 2 / 2;
+  justify-items: center;
+  align-items: center;
   border: 3px solid var(--tertiary);
   background: var(--tertiary);
   border-radius: 4px;
   margin: 1em auto;
   padding: 2em;
-
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
