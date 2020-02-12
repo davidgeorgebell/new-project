@@ -5,3 +5,7 @@
 .directory-link:hover {
   background: var(--tertiary);
 }
+a:hover {
+  color: var(--primary);
+  transition: color 0.4s;
+}

@@ -28,7 +28,6 @@ function App() {
             </Route>
             <Redirect to='/' />
           </Switch>
-          <Footer />
         </div>
       </Router>
     </LoadingContextProvider>
