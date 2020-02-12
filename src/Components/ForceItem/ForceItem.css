@@ -1,5 +1,6 @@
 .directory-link {
   padding: 0.5em;
+  font-size: 1.5em;
 }
 .directory-link:hover {
   background: var(--tertiary);
